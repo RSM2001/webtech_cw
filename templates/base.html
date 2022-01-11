@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+	<title>RCRD</title>
+<style>
+	nav a {
+		color: #EDF5B1;
+		margin-left: 20px;
+	}
+	body {
+		background-color: #EDF5B1;
+	}
+</style>
+</head>
+<body>
+	<div style="background-color:#A3691B; color:#EDF5B1">
+	<nav>
+		<h1 style="margin-left: 20p; font-size:50px"> RCRD </h1>
+		<a href={{ url_for('dis_home') }}>Home</a>
+		<a href={{ url_for('dis_search') }}>Search</a>
+	</nav>
+	</div>
+	<div style="color:#A3691B"
+	{% block content %}{% endblock %}
+</body>
+</html>
+
